@@ -3,6 +3,30 @@
 #include <cstring>
 using namespace std;
 
+void spaceTorles(){
+    char s[100]="  kicsi    kutya   tarka  ",sz[100],*p;
+    while(s[0]==' '){
+        for(int i=0;s[i]!='\0';i++){
+            s[i]=s[i+1];
+        }
+    }
+    int i, h=0;
+    i=0;
+    while(s[h]!='\0'){
+      h++; //hany karakteres a lanc
+    }
+    while(i<h){
+        if(s[i]==' ' && s[i+1]==' '){
+            for(int j=i;s[j]!='\0';j++){
+                s[j]=s[j+1];
+            }
+            h--;
+        }
+        else i++;
+    }
+    cout<<s<<"F";
+}
+
 int main(){
     char s[100]="kicsi kutya tarka",sz[100],*p;
     cin.getline(sz,100); //spaceel beolv
