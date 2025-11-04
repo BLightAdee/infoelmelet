@@ -3,6 +3,13 @@
 #include <cstring>
 using namespace std;
 
+bool maganhgz(char a){
+    if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u' || a=='A' || a=='E' || a=='I' || a=='O' || a=='U')
+        return true;
+    else
+        return false;
+}
+
 bool kicsiMaganhgz(char a){
     if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u')
         return true;
