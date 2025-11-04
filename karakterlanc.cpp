@@ -3,6 +3,13 @@
 #include <cstring>
 using namespace std;
 
+bool kicsiMaganhgz(char a){
+    if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u')
+        return true;
+    else
+        return false;
+}
+
 void madarnyelv(){
     char s[100]="kicsi kutya tarka",sz[100],*p;
     int h=0;
